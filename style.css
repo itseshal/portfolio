@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: linear-gradient(135deg, #0b1220, #1e1b4b, #0f172a);
+    background: #0a0a0a;
     color: #e5e7eb;
     scroll-behavior: smooth;
 }
@@ -13,16 +13,30 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(10, 10, 20, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
     color: white;
     padding: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    transition: 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-nav:hover {
-    background: rgba(20, 20, 40, 0.95);
+nav h2 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #9ca3af;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
 }
 
 /* SECTIONS */
@@ -33,27 +47,35 @@ section {
 
 /* HOME */
 .home {
-    background: radial-gradient(circle at top, #312e81, #0f172a);
-    color: white;
-    padding: 80px 20px;
+    background: radial-gradient(circle at top, #111111, #000000);
+    color: #ffffff;
+    padding: 90px 20px;
 }
 
-/* GLASS CARDS */
+.home h1 {
+    font-size: 40px;
+}
+
+.home p {
+    color: #9ca3af;
+}
+
+/* GLASS DARK CARDS */
 .about, .skills, .projects, .contact {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.03);
     margin: 20px auto;
-    border-radius: 18px;
+    border-radius: 16px;
     padding: 30px;
     max-width: 900px;
     backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    border: 1px solid rgba(255,255,255,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.3s ease;
 }
 
 .about:hover, .skills:hover, .projects:hover, .contact:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.9);
 }
 
 /* SKILLS */
@@ -66,32 +88,30 @@ section {
     display: inline-block;
     margin: 8px;
     padding: 10px 16px;
-    background: linear-gradient(135deg, #6366f1, #a855f7);
-    color: white;
+    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+    color: #e5e7eb;
     border-radius: 25px;
     font-size: 14px;
-    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.4);
-    transition: transform 0.2s ease;
-}
-
-.skills li:hover {
-    transform: scale(1.1);
-}
-
-/* BUTTONS (agar use karein) */
-button {
-    background: linear-gradient(135deg, #6366f1, #a855f7);
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 25px;
-    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.08);
     transition: 0.3s ease;
 }
 
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+.skills li:hover {
+    transform: scale(1.08);
+    background: #ffffff;
+    color: #000000;
+}
+
+/* CONTACT TEXT */
+.contact p {
+    color: #9ca3af;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    color: #6b7280;
+    font-size: 14px;
 }
 
 /* ANIMATION */
@@ -108,12 +128,13 @@ button:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    section {
-        padding: 40px 15px;
+    .home h1 {
+        font-size: 28px;
     }
 
-    .about, .skills, .projects, .contact {
-        margin: 15px;
-        padding: 20px;
+    nav a {
+        display: inline-block;
+        margin: 5px;
     }
 }
+
