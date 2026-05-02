@@ -2,43 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishal | Portfolio</title>
 </head>
 <body>
 
-    <nav>
-        <h2>My Portfolio</h2>
-    </nav>
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>Mishal.</h2>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="home">
-        <h1>Hi, I'm Eshal 👩‍💻</h1>
-<p>Web Developer (Beginner)</p>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero">
+        <h1>Hi, I'm Mishal 👋</h1>
+        <h3>Beginner Web Developer | Learning HTML & CSS</h3>
+        <p>I am passionate about building beautiful websites from scratch. Currently learning the fundamentals of web development and growing every day.</p>
+        <a href="#projects">View My Work</a>
+        <a href="#contact">Contact Me</a>
     </section>
 
-    <section class="about">
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>I am learning web development. I enjoy building simple and creative websites using HTML and CSS.</p>
+        <div class="about-content">
+            <div class="about-image">
+                <!-- Profile photo placeholder -->
+                <img src="profile.jpg" alt="Mishal's Photo" width="200" height="200">
+            </div>
+            <div class="about-text">
+                <p>
+                    Hello! I'm <strong>Mishal</strong>, a passionate beginner web developer who loves turning ideas into reality through code.
+                </p>
+                <p>
+                    I started my web development journey recently and I'm currently focused on mastering <strong>HTML</strong> and <strong>CSS</strong>. My goal is to become a skilled front-end developer.
+                </p>
+                <p>
+                    When I'm not coding, I enjoy exploring new technologies and improving my problem-solving skills.
+                </p>
+                <a href="mishal-cv.pdf" download>Download CV</a>
+            </div>
+        </div>
     </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>GitHub</li>
-        </ul>
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <p>Here are the technologies I am currently learning and working with:</p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Building the structure and skeleton of web pages using semantic HTML elements.</p>
+                <p>Level: Beginner ⭐⭐</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Styling web pages, layouts, colors, fonts, and making designs look beautiful.</p>
+                <p>Level: Learning ⭐</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Coming soon! Planning to learn JS after mastering HTML & CSS.</p>
+                <p>Level: Coming Soon 🔜</p>
+            </div>
+
+        </div>
     </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <p>💪 Gym Website (My First Project)</p>
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Here are some projects I have built while learning web development:</p>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Project 1 — My First Webpage</h3>
+                <p>My very first HTML page. A simple webpage that introduced me to the basics of HTML structure, headings, paragraphs, and links.</p>
+                <p><strong>Tech Used:</strong> HTML</p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 2 — Personal Bio Page</h3>
+                <p>A personal bio page with my photo, information, and links. Practiced using images, lists, and anchor tags.</p>
+                <p><strong>Tech Used:</strong> HTML</p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 3 — This Portfolio!</h3>
+                <p>My own portfolio website built from scratch to showcase my learning journey and projects.</p>
+                <p><strong>Tech Used:</strong> HTML & CSS (coming soon)</p>
+                <a href="#">View Project</a>
+            </div>
+
+        </div>
     </section>
 
-   <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: eshal@gmail.com</p>
-</section>
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me! I'd love to connect.</p>
+
+        <div class="contact-info">
+            <p>📧 Email: <a href="mailto:mishal@email.com">mishal@email.com</a></p>
+            <p>📱 Phone: <a href="tel:+92300000000">+92 300 0000000</a></p>
+            <p>💼 LinkedIn: <a href="#">linkedin.com/in/mishal</a></p>
+            <p>🐙 GitHub: <a href="#">github.com/mishal</a></p>
+        </div>
+
+        <!-- Simple Contact Form -->
+        <div class="contact-form">
+            <h3>Send Me a Message</h3>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>Made with ❤️ by <strong>Mishal</strong></p>
+        <p>© 2024 Mishal. All rights reserved.</p>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
 
 </body>
 </html>
